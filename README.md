@@ -40,3 +40,65 @@ Danach können folgende Dateien angelegt werden. Siehe Dokumentation https://doc
 src/ContaoHelloWorldBundle.php
 src/ContaoManager/Plugin
 ```
+
+Nun können wir die composer.json unsere Contao Installation erweitern und mit Hilfe des composers updaten.
+Die Composer.json sieht wie folgt aus:
+
+```php
+{
+    "name": "contao/managed-edition",
+    "description": "Contao Managed Edition",
+    "license": "LGPL-3.0-or-later",
+    "type": "project",
+    "require": {
+        "contao/calendar-bundle": "^4.13",
+        "contao/comments-bundle": "^4.13",
+        "contao/conflicts": "@dev",
+        "contao/faq-bundle": "^4.13",
+        "contao/listing-bundle": "^4.13",
+        "contao/manager-bundle": "4.13.*",
+        "contao/news-bundle": "^4.13",
+        "contao/newsletter-bundle": "^4.13",
+        "bmehler/contao-hello-world-bundle": "dev-main"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/bmehler/contao-hello-world-bundle.git"
+        }
+    ],
+    "conflict": {
+        "contao-components/installer": "<1.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "contao-community-alliance/composer-plugin": true,
+            "contao-components/installer": true,
+            "contao/manager-plugin": true,
+            "php-http/discovery": false
+        },
+        "preferred-install": {
+            "bmehler/*": "source",
+            "*": "dist"
+        }
+    },
+    "extra": {
+        "contao-component-dir": "assets"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php vendor/bin/contao-setup"
+        ],
+        "post-update-cmd": [
+            "@php vendor/bin/contao-setup"
+        ]
+    }
+}
+
+```
+
+Nun holen wir uns das Hello World Bundle in die Contao Installation:
+```php
+composer update
+```
