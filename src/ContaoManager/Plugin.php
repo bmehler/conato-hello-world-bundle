@@ -1,5 +1,5 @@
 <?php
-namespace bmehler\ContaoHelloWorldBundle\ContaoManager;
+namespace Bmehler\ContaoHelloWorldBundle\ContaoManager;
 
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
