@@ -5,7 +5,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/bmehler/conato-hello-world-bundle.git"
+            "url": "https://github.com/bmehler/contao-hello-world-bundle.git"
         }
     ],
     "require": {
