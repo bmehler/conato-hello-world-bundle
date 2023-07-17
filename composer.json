@@ -4,16 +4,16 @@
     "type": "contao-bundle",
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "require": {
+        "contao/core-bundle": "^4.13",
+        "bmehler/contao-hello-world-bundle": "dev-master"
+    },
     "repositories": [
         {
             "type": "git",
             "url": "https://github.com/bmehler/contao-hello-world-bundle.git"
         }
     ],
-    "require": {
-        "contao/core-bundle": "^4.13",
-        "bmehler/contao-hello-world-bundle": "dev-master"
-    },
     "extra": {
         "contao-manager-plugin": "Bmehler\\ContaoHelloWorldBundle\\ContaoManager\\Plugin"
     },
