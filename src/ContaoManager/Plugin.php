@@ -5,7 +5,7 @@ use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use Contao\CoreBundle\ContaoCoreBundle;
-use bmehler\ContaoHelloWorldBundle\ContaoHelloWorldBundle;
+use Bmehler\ContaoHelloWorldBundle\ContaoHelloWorldBundle;
 
 class Plugin implements BundlePluginInterface
 {
