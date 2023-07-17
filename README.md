@@ -1,1 +1,1 @@
-# conato-hello-world-bundle
+# A Contao Hello World Bundle for CMS Contao

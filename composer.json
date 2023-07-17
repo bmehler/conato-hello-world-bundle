@@ -1,0 +1,25 @@
+{
+    "name": "bmehler/contao-hello-world-bundle",
+    "description": "A hello world bundle for CMS Contao",
+    "type": "contao-bundle",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/bmehler/conato-hello-world-bundle.git"
+        }
+    ],
+    "require": {
+        "contao/core-bundle": "^4.13"
+    },
+    "license": "LGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Bmehler\\ContaoHelloWorldBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bernhard Mehler"
+        }
+    ]
+}
