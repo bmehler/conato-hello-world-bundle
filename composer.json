@@ -2,18 +2,9 @@
     "name": "bmehler/contao-hello-world-bundle",
     "description": "A hello world bundle for CMS Contao",
     "type": "contao-bundle",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
-        "contao/core-bundle": "^4.13",
-        "bmehler/contao-hello-world-bundle": "dev-master"
+        "contao/core-bundle": "^4.13"
     },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/bmehler/contao-hello-world-bundle.git"
-        }
-    ],
     "extra": {
         "contao-manager-plugin": "Bmehler\\ContaoHelloWorldBundle\\ContaoManager\\Plugin"
     },
