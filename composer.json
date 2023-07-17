@@ -11,7 +11,8 @@
         }
     ],
     "require": {
-        "contao/core-bundle": "^4.13"
+        "contao/core-bundle": "^4.13",
+        "bmehler/contao-hello-world-bundle": "dev-master"
     },
     "extra": {
         "contao-manager-plugin": "Bmehler\\ContaoHelloWorldBundle\\ContaoManager\\Plugin"
