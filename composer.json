@@ -6,7 +6,7 @@
         "contao/core-bundle": "^4.13"
     },
     "extra": {
-        "contao-manager-plugin": "bmehler\\ContaoHelloWorldBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Bmehler\\ContaoHelloWorldBundle\\ContaoManager\\Plugin"
     },
     "license": "LGPL-3.0-or-later",
     "autoload": {
