@@ -1,4 +1,4 @@
-# A Contao Hello World Bundle for CMS Contao
+# A Contao Hello World Bundle for CMS Contao 
 
 ```php
 mkdir contao-hello-world-bundle
