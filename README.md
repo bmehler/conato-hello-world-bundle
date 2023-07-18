@@ -97,8 +97,18 @@ Die Composer.json sieht wie folgt aus:
 }
 
 ```
+Nun geht man in das Verzeichnis der Contao Installation.
+Bei mir ist das:
+
+```php
+cd /Applications/MAMP/htdocs/contao-tutorial
+```
 
 Nun holen wir uns das Hello World Bundle in die Contao Installation:
 ```php
 composer update
+```
+Danach kann man überprüfen, ob die Datenbankeinträge aktuell sind:
+```php
+php vendor/bin/contao-console contao:migrate --dry-run
 ```
